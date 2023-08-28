@@ -14,7 +14,10 @@ if operation=='Add':
 elif operation=='Subtract':
     st.write(num1-num2)
 elif operation=='Divide':
-    st.write(num1/num2)
+    if num2!=0:
+        st.write(num1/num2)
+    else:
+        st.warning('Zero Division')
 elif operation=='Multiply':
     st.write(num1*num2)
 else:
